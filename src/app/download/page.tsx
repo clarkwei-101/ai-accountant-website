@@ -13,7 +13,7 @@ const platforms = [
     icon: Apple,
     label: "Download for macOS",
     sub: "Universal · Apple Silicon & Intel",
-    file: "Ai-Accountant-1.0.0-mac.dmg",
+    file: "AI-Countant-1.0.0-mac.dmg",
     size: "84 MB",
   },
   {
@@ -21,7 +21,7 @@ const platforms = [
     icon: Monitor,
     label: "Download for Windows",
     sub: "Windows 10/11 · x64",
-    file: "Ai-Accountant-1.0.0-windows.exe",
+    file: "AI-Countant-1.0.0-windows.exe",
     size: "78 MB",
   },
 ];
@@ -69,7 +69,7 @@ export default function DownloadPage() {
             </div>
 
             <h1 className="mt-8 text-3xl sm:text-4xl font-semibold tracking-tight text-[#2b1f17]">
-              Download the Ai-Accountant Agent
+              Download the AI Countant Agent
             </h1>
             <p className="mt-3 text-[#4a3728]/80">
               The agent runs locally on your machine and connects to your books

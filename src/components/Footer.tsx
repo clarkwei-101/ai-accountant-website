@@ -15,7 +15,7 @@ const columns = [
     links: [
       { name: "About", href: "#about" },
       { name: "License", href: "/license" },
-      { name: "Contact", href: "mailto:hello@ai-accountant.com" },
+      { name: "Contact", href: "mailto:hello@ai-countant.com" },
     ],
   },
   {
@@ -41,11 +41,11 @@ export function Footer() {
               <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-[#4a3728] text-white font-mono text-sm">
                 A
               </span>
-              <span>Ai-Accountant</span>
+              <span>Ai Countant</span>
             </Link>
             <p className="mt-4 text-sm text-[#4a3728]/70 max-w-xs leading-relaxed">
-              Specialized AI accountants that work on your live books — automate
-              reconciliation, reporting, and month-end close.
+              The accountant that never closes — AI-powered bookkeeping,
+              reconciliation, and month-end close automation.
             </p>
           </div>
 
@@ -71,8 +71,8 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-[#4a3728]/10 flex flex-col sm:flex-row justify-between gap-4 text-xs text-[#4a3728]/60">
-          <p>© 2026 Ai-Accountant, Inc. All rights reserved.</p>
-          <p>hello@ai-accountant.com</p>
+          <p>© 2026 AI Countant, Inc. All rights reserved.</p>
+          <p>hello@ai-countant.com</p>
         </div>
       </div>
     </footer>

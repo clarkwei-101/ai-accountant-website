@@ -14,19 +14,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ai-Accountant — Your AI-Powered Financial Agent",
+  title: "AI Countant — The accountant that never closes",
   description:
-    "Ai-Accountant builds specialized AI agents that automate bookkeeping, reconciliation, and financial reporting for modern businesses.",
+    "The accountant that never closes. Money moves, and AI Countant posts the debit and credit the same second. Your balance sheet, income statement and cash flow stay correct every morning, period-end runs itself, and Hong Kong profits tax is calculated from the same ledger.",
   keywords: [
     "AI accountant",
+    "AI Countant",
     "financial AI agent",
     "automated bookkeeping",
     "AI accounting software",
+    "Hong Kong tax",
   ],
   openGraph: {
-    title: "Ai-Accountant — Your AI-Powered Financial Agent",
+    title: "AI Countant — The accountant that never closes",
     description:
-      "Specialized AI agents trained on accounting. Automate bookkeeping, reconciliation, and reporting.",
+      "The accountant that never closes. Money moves, and AI Countant posts the debit and credit the same second. Your balance sheet, income statement and cash flow stay correct every morning, period-end runs itself, and Hong Kong profits tax is calculated from the same ledger.",
     type: "website",
   },
 };

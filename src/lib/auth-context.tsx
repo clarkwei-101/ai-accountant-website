@@ -14,8 +14,8 @@ type AuthContextType = {
 
 const AuthContext = createContext<AuthContextType | null>(null);
 
-const STORAGE_KEY = "ai-accountant-auth";
-const USERS_KEY = "ai-accountant-users";
+const STORAGE_KEY = "ai-countant-auth";
+const USERS_KEY = "ai-countant-users";
 
 type StoredUser = { email: string; name?: string; password: string };
 

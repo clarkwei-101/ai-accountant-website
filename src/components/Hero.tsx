@@ -56,7 +56,7 @@ export function Hero() {
               <span className="h-3 w-3 rounded-full bg-[#c8a882]" />
               <span className="h-3 w-3 rounded-full bg-[#4a3728]/60" />
               <div className="ml-4 text-xs text-[#4a3728]/60 font-mono">
-                ai-accountant.app / dashboard
+                ai-countant.app / dashboard
               </div>
             </div>
             <div className="p-8 grid sm:grid-cols-3 gap-6">

@@ -69,7 +69,7 @@ export function Demo() {
                 </span>
                 <span className="absolute bottom-6 left-6 right-6 flex items-center justify-between text-white">
                   <span className="text-sm font-medium">
-                    Ai-Accountant — Product demo
+                    AI Countant — Product demo
                   </span>
                   <span className="text-xs text-white/60 font-mono">02:14</span>
                 </span>

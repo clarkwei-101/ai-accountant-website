@@ -1,6 +1,6 @@
-# Ai-Accountant — Marketing Site
+# AI Countant — Marketing Site
 
-A modern marketing website for **Ai-Accountant**, an AI-powered financial agent
+A modern marketing website for **AI Countant**, an AI-powered financial agent
 company. Built with Next.js 14 (App Router) + Tailwind CSS, inspired by the
 professional financial-tech aesthetic of [rillet.com/product/aura-ai](https://www.rillet.com/product/aura-ai).
 
@@ -110,4 +110,4 @@ component changes are required.
 ## License & assets
 
 The repository is the source for the company website only. The actual
-Ai-Accountant desktop agent (macOS / Windows) ships separately.
+AI Countant desktop agent (macOS / Windows) ships separately.

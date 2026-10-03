@@ -34,7 +34,7 @@ export default function LoginPage() {
               Welcome back
             </h1>
             <p className="mt-1 text-sm text-[#4a3728]/70">
-              Log in to download the Ai-Accountant desktop agent.
+              Log in to download the AI Countant desktop agent.
             </p>
 
             <form onSubmit={onSubmit} className="mt-8 space-y-4">

@@ -1,7 +1,8 @@
 {
-  "name": "ai-accountant",
+  "name": "ai-countant",
   "version": "0.1.0",
   "private": true,
+  "description": "The accountant that never closes. Money moves, and AI Countant posts the debit and credit the same second. Your balance sheet, income statement and cash flow stay correct every morning, period-end runs itself, and Hong Kong profits tax is calculated from the same ledger.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

@@ -71,7 +71,7 @@ export default function ProjectPage() {
             An AI accountant that respects the audit trail.
           </h1>
           <p className="mt-5 text-lg text-[#4a3728]/80 leading-relaxed">
-            Most AI tools are chatbots. Ai-Accountant is a system of specialized
+            Most AI tools are chatbots. AI Countant is a system of specialized
             agents that work against your live general ledger — drafts journal
             entries, reconciles bank lines, drafts flux analyses, and closes the
             month — while your team keeps full control.

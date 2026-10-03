@@ -62,10 +62,10 @@ export default function LicensePage() {
           <p className="mt-12 text-center text-sm text-[#4a3728]/70">
             Have questions in the meantime?{" "}
             <Link
-              href="mailto:hello@ai-accountant.com"
+              href="mailto:hello@ai-countant.com"
               className="text-[#4a3728] font-medium underline"
             >
-              hello@ai-accountant.com
+              hello@ai-countant.com
             </Link>
           </p>
         </div>

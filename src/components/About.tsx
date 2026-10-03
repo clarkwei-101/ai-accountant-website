@@ -37,13 +37,13 @@ export function About() {
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           <div>
             <p className="text-xs uppercase tracking-[0.18em] text-[#c8a882] font-medium">
-              About Ai-Accountant
+              About AI Countant
             </p>
             <h2 className="mt-4 text-4xl sm:text-5xl font-semibold tracking-tight text-[#2b1f17] text-balance leading-tight">
               We&apos;re building the accountant we never had.
             </h2>
             <p className="mt-5 text-lg text-[#4a3728]/80 leading-relaxed">
-              Ai-Accountant was started by a team of chartered accountants and ML
+              AI Countant was started by a team of chartered accountants and ML
               engineers who were tired of watching great founders fly blind
               because the books took 12 days to close. We built an agent that
               actually understands debits and credits — and respects the audit

@@ -59,7 +59,7 @@ export function Project() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="max-w-2xl">
           <p className="text-xs uppercase tracking-[0.18em] text-[#c8a882] font-medium">
-            The Ai-Accountant Agent
+            The AI Countant Agent
           </p>
           <h2 className="mt-4 text-4xl sm:text-5xl font-semibold tracking-tight text-[#2b1f17] text-balance leading-tight">
             One agent. Every workflow a finance team runs.
