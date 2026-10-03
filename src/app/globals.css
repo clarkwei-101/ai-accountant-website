@@ -2,25 +2,100 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #2b1f17;
+  --brown: #4a3728;
+  --brown-dark: #2b1f17;
+  --brown-light: #6b5340;
+  --gold: #c8a882;
+  --gold-light: #e8d5b7;
+  --cream: #faf6f1;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-brown: var(--brown);
+  --color-brown-dark: var(--brown-dark);
+  --color-brown-light: var(--brown-light);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-cream: var(--cream);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Inter, Arial, Helvetica, sans-serif;
+}
+
+/* Custom utilities */
+.text-balance {
+  text-wrap: balance;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #4a3728 0%, #c8a882 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-gradient {
+  background: radial-gradient(ellipse at top, #faf6f1 0%, #ffffff 60%);
+}
+
+.card-shadow {
+  box-shadow: 0 1px 3px rgba(74, 55, 40, 0.04), 0 4px 12px rgba(74, 55, 40, 0.06);
+}
+
+.card-shadow-lg {
+  box-shadow: 0 4px 16px rgba(74, 55, 40, 0.08), 0 16px 40px rgba(74, 55, 40, 0.08);
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(74, 55, 40, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(74, 55, 40, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(200, 168, 130, 0.15) 50%,
+    transparent 100%
+  );
+  background-size: 1000px 100%;
+  animation: shimmer 3s infinite;
 }
