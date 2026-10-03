@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ai-Accountant — Marketing Site
 
-## Getting Started
+A modern marketing website for **Ai-Accountant**, an AI-powered financial agent
+company. Built with Next.js 14 (App Router) + Tailwind CSS, inspired by the
+professional financial-tech aesthetic of [rillet.com/product/aura-ai](https://www.rillet.com/product/aura-ai).
 
-First, run the development server:
+## Design system
+
+- Background: white (#ffffff)
+- Primary accent: deep brown (#4a3728 / #2b1f17)
+- Secondary accent: warm gold (#c8a882)
+- Surface tint: cream (#faf6f1)
+- Fonts: Geist Sans + Geist Mono
+
+## Features
+
+- **Hero** — "Offload the busy work. Keep the control." with a live-feeling
+  product mock dashboard.
+- **Project / Features** — 8 capability cards (automated bookkeeping,
+  reconciliation, reporting, month-end close, forecasting, NL, audit trail,
+  monitoring).
+- **Customers** — 6 target segments (scaling SaaS, accounting firms,
+  e-commerce, founders, fintech, multi-entity).
+- **Demo video** — Video placeholder + chapter navigation.
+- **About Us** — Mission, values, stats.
+- **Auth** — Sign-up + log-in (localStorage-backed, ready to swap for
+  NextAuth.js + DB).
+- **License page** — Disabled CTA ("Coming soon").
+- **Download page** — Protected route, requires auth, macOS + Windows download
+  cards.
+
+## Tech stack
+
+- Next.js 16 / React 19
+- Tailwind CSS 4
+- TypeScript
+- localStorage-backed auth (drop-in NextAuth.js compatible)
+
+## Local development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# open http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Production build
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm run start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment to Vercel
 
-## Learn More
+The fastest path is the Vercel dashboard (no CLI needed):
 
-To learn more about Next.js, take a look at the following resources:
+1. Push this repo to GitHub:
+   ```bash
+   git remote add origin git@github.com:YOUR_USER/ai-accountant.git
+   git branch -M main
+   git push -u origin main
+   ```
+2. Visit [vercel.com/new](https://vercel.com/new) and import the repo.
+3. Vercel auto-detects Next.js. Click **Deploy**.
+4. (Optional) Add a custom domain in **Settings → Domains**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### CLI alternative
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm i -g vercel
+vercel login
+vercel --prod
+```
 
-## Deploy on Vercel
+## Project structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+src/
+├── app/
+│   ├── layout.tsx        # Root layout + AuthProvider
+│   ├── page.tsx          # Homepage
+│   ├── project/          # Deep-dive on the agent
+│   ├── download/         # Protected: macOS/Windows download
+│   ├── license/          # License + disabled CTA
+│   ├── login/            # Login form
+│   └── signup/           # Sign-up form
+├── components/
+│   ├── SiteShell.tsx     # Navbar + Footer wrapper
+│   ├── Navbar.tsx        # Top navigation (auth-aware)
+│   ├── Footer.tsx
+│   ├── Hero.tsx
+│   ├── Project.tsx
+│   ├── Customers.tsx
+│   ├── Demo.tsx
+│   ├── About.tsx
+│   └── CTA.tsx
+└── lib/
+    ├── utils.ts          # cn() helper
+    └── auth-context.tsx  # AuthProvider + useAuth
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Swapping in real auth
+
+`src/lib/auth-context.tsx` is intentionally minimal. To wire up real
+authentication, replace the localStorage calls with NextAuth.js + a database
+(e.g. Postgres + Prisma). The `useAuth()` API surface stays the same, so no
+component changes are required.
+
+## License & assets
+
+The repository is the source for the company website only. The actual
+Ai-Accountant desktop agent (macOS / Windows) ships separately.
